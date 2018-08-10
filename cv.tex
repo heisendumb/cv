@@ -1,0 +1,213 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\begin{document}
+
+\header{guilherme}{albuquerque}{engenheiro de software} % Your name and current job title/field
+
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
++(55)(48)996494146
+~
+\href{mailto:guiealbuquerque@gmail.com}{guiealbuquerque@gmail.com}
+\href{https://github.com/heisendumb}{GitHub}
+\href{https://www.linkedin.com/in/heisenbugger/}{LinkedIn}
+\section{idiomas}
+Inglês: avançado (leitura, escrita); intermediário (fala)
+\section{linguagens de desenvolvimento de software}
+C++, Python, Node.js, Shell, Java
+\section{protocolos}
+SIP, RTC, HTTP, SMTP, RTP, SNMP
+\section{cloud}
+Kubernetes, Azure, Docker, CoreOS
+\section{banco de dados}
+MySQL, PostgreSQL
+\section{documentação}
+LaTeX, Pydoc
+\section{automação}
+Octopus, Chef, Make, Groovy
+\section{ambiente de desenvolvimento}
+Vagrant, Docker Compose
+\section{monitoramento}
+Logstash, Grafana, Kibana, Sysdig
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{formação}
+
+\begin{entrylist}
+%------------------------------------------------
+%------------------------------------------------
+\entry
+{2012--2018}
+{Engenharia de Telecomunicações}
+{IFSC}
+{
+    \begin{itemize}
+        \item \href{https://www.sj.ifsc.edu.br/index.php/campus/boletins-informativos/198-engenharia-de-telecomunicacoes-m
+atriz-curricular}{Matriz curricular}
+    \end{itemize}
+}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experiências}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2017--agora}
+{Way2 Tecnologia}
+{Florianópolis, Santa Catarina}
+{\emph{Engenheiro de Software} \\
+
+    Como membro e líder na área de DevOps sou responsável pela infraestrutura em nuvem, implantação on-premise,
+    processos de automação e o monitoramento. Além disso, atuo como evangelista da cultura DevOps e juntamente com as equipes de desenvolvimento e
+    de qualidade desenvolvo e implemento os processos de integração contínua e entrega contínua. Para desenvolver tais ideias e melhorar os processos
+    internos de desenvolvimento, houve vários problemas complicados a serem resolvidos como:
+
+\begin{itemize}
+    \item Especificação de uma DSL para desenvolver os pipelines de entrega contínua
+    \item Definir soluções para implantação, ambientes de desenvolvimento e produção que independem da tecnologia utilizada no desenvolvimento dos produtos
+    \item Problemas de performance e de segurança com Oracle na Azure
+\end{itemize}
+
+Principais realizações:\\
+
+\begin{itemize}
+    \item Implementação de monitoramento em tempo real para ambientes de produção utilizando a stack ELK (Elasticsearch, Logstash e Kibana)
+    \item Participação ativa no desenvolvimento de web crawlers utilizados na etapa de qualidade do pipeline de entrega contínua
+    \item Automação do ambiente de desenvolvimento utilizando docker compose
+    \item Orquestração de cluster na Azure utilizando Kubernetes e Docker
+    \item Automação da implantação em clientes on-premise utilizando Octopus
+    \item Implementação de pipelines para entrega contínua dos projetos
+\end{itemize}
+
+}
+\end{entrylist}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015--2017}
+{Disruptiva - Franchise Intelligence}
+{Florianópolis, Santa Catarina}
+{\emph{Engenheiro de Software} \\
+
+    Como membro responsável da área de DevOps, fui designado a implantar a estrutura em nuvem
+    (web, android e IOS), automação dos processos e monitoramento. \\
+    Além disso, atuei como evangelista da cultura DevOps e juntamente com os desenvolvedores implementamos 
+    os processos de integração contínua e entrega contínua. 
+    Houve muitos desafios como:\\
+
+\begin{itemize}
+    \item Implantação de toda a infraestrutura de múltiplos projetos na Azure
+    \item Definição da topologia de rede e medidas de segurança
+    \item Criação de rotinas de backups para as VMs com diferentes sistemas operacionais na Azure
+    \item Versionamento da implantação da infraestrutura para criação de múltiplos ambientes simultâneos
+\end{itemize}
+
+Principais realizações:
+
+\begin{itemize}
+    \item Automação do ambiente de desenvolvimento utilizando docker compose
+    \item Painel de monitoramento totalmente automatizado utilizando logentries e datadog
+    \item Automatizado o processo provisionamento de criação de VMs na Azure
+    \item Versionamento da implantação de toda infraestrutura e maneira simples de replicação da mesma (incluindo rede e segurança)
+    \item Participação ativa no desenvolvimento de ferramentas para automatizar a infraestrutura na Azure
+    \item Implementação de pipelines para entrega contínua dos produtos
+    \item Replicação de banco de dados utilizando MySQL e PostgreSQL
+\end{itemize}
+}
+\end{entrylist}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2014--2015}
+{IFSC | Tractebel S.A}
+{São José, Santa Catarina}
+{\emph{Bolsista} \\
+    
+    Desenvolvimento de um protótipo analisador de espectro para medir rendimento de motores elétricos trifásico.
+
+Principais realizações:\\
+
+\begin{itemize}
+    \item Implementação de uma aplicação para análise espectral utilizando C++ e QtCreator em Linux
+    \item Implementação de uma aplicação para captura de dados oriundos de sensores através de um conversor AD
+    \item Desenvolvimento de uma estrutura relacional em SQL para armazenamento dos dados obtidos dos sensores utilizando a biblioteca SQLite em Python.
+\end{itemize}
+}
+\end{entrylist}
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATIONS/EVENTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{eventos}
+
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2014}
+{Competição Intel de Sistemas Embarcados}
+{\href{http://sbesc.lisha.ufsc.br/sbesc2014/Intel+Embedded+Systems+Competition}{SBESC2014}}
+{
+    
+    Participação na competição de sistemas embarcados promovida pela Intel 
+    e representado o IFSC/SJ que ocorreu no SBESC2014.\\
+
+    Nessa competição foi submetido o projeto de Identificação Automática de Símbolos da linguagem de sinais por vídeo,
+    desenvolvido em C/C++ utilizando OpenCV e QtCreator em Linux.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{profissional:} sistemas distribuídos, computação em nuvem, test driven development, arquitetura de software, redes de computadores, linux, open source, inteligência artificial, programação funcional.
+
+\textbf{livros:} Hackers: Heroes Of The Computer Revolution, REST in Practice, Site Reliability Engineering, Fundamentos de Sistemas Operacionais.
+
+\end{document}
