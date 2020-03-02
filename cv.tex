@@ -23,7 +23,7 @@
 
 \begin{document}
 
-\header{guilherme}{de albuquerque}{analista de infraestrutura} % Your name and current job title/field
+\header{guilherme}{albuquerque}{analista de infraestrutura} % Your name and current job title/field
 
 
 %----------------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ Ansible, Terraform, Groovy
 \section{ambiente de desenvolvimento}
 Vagrant, Docker Compose
 \section{monitoramento}
-ELK, Grafana/Prometheus, Sysdig, Datadog
+Nagios, ELK, Grafana/Prometheus, Sysdig, Datadog
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ ELK, Grafana/Prometheus, Sysdig, Datadog
 {IFSC}
 {
     \begin{itemize}
-        \item \href{https://wiki.sj.ifsc.edu.br/index.php/Matriz_Curricular_da_Engenharia_de_Telecomunica%C3%A7%C3%B5es}{Matriz curricular}
+        \item \href{http://bit.ly/2VAPEeh}{Matriz curricular}
     \end{itemize}
 }
 %------------------------------------------------
@@ -96,13 +96,21 @@ ELK, Grafana/Prometheus, Sysdig, Datadog
     processos de automação e o monitoramento. Além disso, atuo como evangelista da cultura DevOps e juntamente com as equipes de desenvolvimento implemento os processos de integração contínua e entrega contínua. Para desenvolver tais ideias e melhorar os processos internos de desenvolvimento, houve vários problemas complicados a serem resolvidos como:
 
 \begin{itemize}
-    \item 
+    \item Arquitetar uma infraestrutura resiliente e escalonável que pudesse suportar inúmeras aplicações em execução utilizando o OpenShift.
+    \item Em conjunto com as equipes de desenvolvimento aplicar as práticas descritas pela metologia do Twelve-Factor para as aplicações em todos os ambientes.
+    \item Implantação da cultura DevOps na equipe de infraestrutura com foco de automatização dos processos e cultura do monitoramento contínuo dos recursos e serviços.
 \end{itemize}
 
 Principais realizações:\\
 
 \begin{itemize}
-    \item 
+    \item Melhora contínua no processo de automatização de implantação de aplicações e serviços através do Ansible.
+    \item Implementação de automatização para criação de recursos de infraestrutura no OpenStack através do Terraform.
+    \item Melhoria na implementação de pipelines (CI/CD) para entrega contínua dos projetos.
+    \item Implementação de monitoramento em tempo real para ambientes de desenvolvimento e produção utilizando a stack ELK (Elasticsearch, Logstash e Kibana).
+    \item Implantação de registry para as imagens dos contêineres em busca de vulnerabilidades utilizado o Harbor.
+    \item Implantação do SSO Keycloak para autenticação interna nos serviços da infraestrutura e autenticação externa através de MFA.
+    \item Implantação do 3scale (API Management) no OpenShift.
 \end{itemize}
 
 }
@@ -122,20 +130,20 @@ Principais realizações:\\
     internos de desenvolvimento, houve vários problemas complicados a serem resolvidos como:
 
 \begin{itemize}
-    \item Especificação de uma DSL para desenvolver os pipelines de entrega contínua
-    \item Definir soluções para implantação, ambientes de desenvolvimento e produção que independem da tecnologia utilizada no desenvolvimento dos produtos
-    \item Problemas de performance e de segurança com Oracle na Azure
+    \item Especificação de uma DSL para desenvolver os pipelines de entrega contínua.
+    \item Definir soluções para implantação, ambientes de desenvolvimento e produção que independem da tecnologia utilizada no desenvolvimento dos produtos.
+    \item Problemas de performance e de segurança com Oracle na Azure.
 \end{itemize}
 
 Principais realizações:\\
 
 \begin{itemize}
-    \item Implementação de monitoramento em tempo real para ambientes de produção utilizando a stack ELK (Elasticsearch, Logstash e Kibana)
-    \item Participação ativa no desenvolvimento de web crawlers utilizados na etapa de qualidade do pipeline de entrega contínua
-    \item Automação do ambiente de desenvolvimento utilizando docker compose
-    \item Orquestração de cluster na Azure utilizando Kubernetes e Docker
-    \item Automação da implantação em clientes on-premise utilizando Octopus
-    \item Implementação de pipelines para entrega contínua dos projetos
+    \item Implementação de monitoramento em tempo real para ambientes de produção utilizando a stack ELK (Elasticsearch, Logstash e Kibana).
+    \item Participação ativa no desenvolvimento de web crawlers utilizados na etapa de qualidade do pipeline de entrega contínua.
+    \item Automação do ambiente de desenvolvimento utilizando docker compose.
+    \item Orquestração de cluster na Azure utilizando Kubernetes e Docker.
+    \item Automação da implantação em clientes on-premise utilizando Octopus.
+    \item Implementação de pipelines para entrega contínua dos projetos.
 \end{itemize}
 
 }
@@ -156,22 +164,22 @@ Principais realizações:\\
     Houve muitos desafios como:\\
 
 \begin{itemize}
-    \item Implantação de toda a infraestrutura de múltiplos projetos na Azure
-    \item Definição da topologia de rede e medidas de segurança
-    \item Criação de rotinas de backups para as VMs com diferentes sistemas operacionais na Azure
-    \item Versionamento da implantação da infraestrutura para criação de múltiplos ambientes simultâneos
+    \item Implantação de toda a infraestrutura de múltiplos projetos na Azure.
+    \item Definição da topologia de rede e medidas de segurança.
+    \item Criação de rotinas de backups para as VMs com diferentes sistemas operacionais na Azure.
+    \item Versionamento da implantação da infraestrutura para criação de múltiplos ambientes simultâneos.
 \end{itemize}
 
 Principais realizações:
 
 \begin{itemize}
-    \item Automação do ambiente de desenvolvimento utilizando docker compose
-    \item Painel de monitoramento totalmente automatizado utilizando logentries e datadog
-    \item Automatizado o processo provisionamento de criação de VMs na Azure
-    \item Versionamento da implantação de toda infraestrutura e maneira simples de replicação da mesma (incluindo rede e segurança)
-    \item Participação ativa no desenvolvimento de ferramentas para automatizar a infraestrutura na Azure
-    \item Implementação de pipelines para entrega contínua dos produtos
-    \item Replicação de banco de dados utilizando MySQL e PostgreSQL
+    \item Automação do ambiente de desenvolvimento utilizando docker compose.
+    \item Painel de monitoramento totalmente automatizado utilizando logentries e datadog.
+    \item Automatizado o processo provisionamento de criação de VMs na Azure.
+    \item Versionamento da implantação de toda infraestrutura e maneira simples de replicação da mesma (incluindo rede e segurança).
+    \item Participação ativa no desenvolvimento de ferramentas para automatizar a infraestrutura na Azure.
+    \item Implementação de pipelines para entrega contínua dos produtos.
+    \item Replicação de banco de dados utilizando MySQL e PostgreSQL.
 \end{itemize}
 }
 \end{entrylist}
@@ -189,8 +197,8 @@ Principais realizações:
 Principais realizações:\\
 
 \begin{itemize}
-    \item Implementação de uma aplicação para análise espectral utilizando C++ e QtCreator em Linux
-    \item Implementação de uma aplicação para captura de dados oriundos de sensores através de um conversor AD
+    \item Implementação de uma aplicação para análise espectral utilizando C++ e QtCreator em Linux.
+    \item Implementação de uma aplicação para captura de dados oriundos de sensores através de um conversor AD.
     \item Desenvolvimento de uma estrutura relacional em SQL para armazenamento dos dados obtidos dos sensores utilizando a biblioteca SQLite em Python.
 \end{itemize}
 }
@@ -216,6 +224,73 @@ Principais realizações:\\
 
     Nessa competição foi submetido o projeto de Identificação Automática de Símbolos da linguagem de sinais por vídeo,
     desenvolvido em C/C++ utilizando OpenCV e QtCreator em Linux.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2016}
+{The Developers Conference - Florianópolis}
+{\href{https://thedevconf.com/tdc/2016/florianopolis/trilhas}{TDC}}
+{
+    
+    Participação no evento do TDC em 2015 com foco nas trilhas de Cloud Computing, DevOps, NoSQL e IoT.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2018}
+{The Developers Conference - Florianópolis}
+{\href{https://thedevconf.com/tdc/2018/florianopolis/trilhas}{TDC}}
+{
+    
+    Participação no evento do TDC em 2018 com foco nas trilhas de DevOps e Containers.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2018}
+{DevOps Days Florianópolis}
+{\href{https://devopsdays.org/events/2018-florianopolis/program}{devopsdays}}
+{
+    
+    Participação no evento do Devops Days Floripa em 2018.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2018}
+{DotNETFloripa}
+{\href{https://www.meetup.com/DotNetFloripa/}{dotnetfloripa}}
+{
+    
+    Palestrante no evento do DotNETFloripa com foco de Orquestração de contêineres .NET core no K8S e a utilização de contêineres Windows.
+
+}
+%------------------------------------------------
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2017-2019}
+{DevOps Floripa}
+{\href{https://www.meetup.com/DevOps-Florianopolis/}{devopsfloripa}}
+{
+    
+    Participação nos meetups do grupo DevOps Floripa. Esses meetups tem foco de propagar a cultura DevOps para as equipes de operações e 
+    desenvolvimento. Com palestrantes que trazem cases que demonstram como engajar a cultura DevOps dentro das empresas tanto com
+    a utilização de ferramentas quanto a melhoria contínua de processos entre as equipes de operações e desenvolvimento.
 
 }
 %------------------------------------------------
